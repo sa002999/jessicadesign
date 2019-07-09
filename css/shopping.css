@@ -1,0 +1,432 @@
+@media screen and (min-width: 737px){
+*{margin: 0;padding: 0;list-style: none;font-family: arial, 微軟正黑體;}
+html,body{height: 100%;width: 100%;}
+body{
+	overflow-x: hidden;
+}
+header{
+	background-color: #222;
+	width: 100%;
+	height: 50%;
+	background: url(../images/bg_shopping_01.jpg) center center no-repeat;
+	background-size: cover; 
+	box-shadow:0px 5px 10px rgba(10%,10%,10%,0.4), 
+}
+
+header p{
+	width: 330px;
+	height: 120px;
+	color:#b7985b;
+	font-size: 16px;
+	line-height: 45px;
+	text-indent:2em;
+	letter-spacing:1px;
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	animation:tittlemove 3s  forwards;
+}
+@keyframes tittlemove{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+.accout{
+	width: 115px;
+	height: 50px;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 999;
+}
+.accout a span{
+	font-size: 18px;
+	color: #b7985b;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	position: absolute;
+	top: 13px;
+}
+.accout a img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*cursor: pointer;*/
+}
+.shop_main{
+	outline: 2px solid #b7985b;
+	box-shadow:5px 5px 0 #fff,10px 10px 0 #b7985b, 
+			   -5px -5px 0 #fff,-10px -10px 0 #b7985b;
+	width: 1080px;
+	height: 1350px;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	animation:shop_mainmove 3s  forwards;
+}
+@keyframes shop_mainmove{
+			0%{
+				top: 100px;
+				opacity: .2;
+			}
+			100%{
+				top: 40px;
+				opacity: 1;
+			}
+		}
+
+.shop_main>div{
+	/*margin-left: 40px;
+	margin-top: 40px;*/
+	position: relative;
+	margin: 20px;
+	float: left;
+}
+.shop_main div{
+	overflow: hidden;
+}
+.shop_main div img{
+	z-index: -1;
+}
+.i01{
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.i01 img{
+	width: auto;
+	height: 100%;
+}
+.i02{
+	width: 400px;
+	height: 400px;
+}
+.i02 img{
+	width: 100%;
+	height: auto;
+}
+.i03{
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+.i03 div{
+	/*outline: 1px solid blue;*/
+	width: 230px;
+	height: 230px;
+	/*float: left;*/
+	position: absolute;
+}
+.i03 div img{
+	width: 100%;
+	height: auto;
+}
+.i03-1{
+	top: 0;
+	left: 0;
+}
+.i03-2{
+	top: 0;
+	right: 0;
+}
+.i03-3{
+	left: 0;
+	bottom: 0;
+}
+.i03-4{
+	right: 0;
+	bottom: 0;
+}
+.i04{
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+}
+.i04 img{
+	width: auto;
+	height: 100%;
+}
+.i05{
+	width: 300px;
+	height: 300px;
+}
+.i05 img{
+	width: 100%;
+	height: auto;
+}
+.i06{
+	width: 700px;
+	height: 300px;
+}
+.i06 div{
+	/*outline: 1px solid blue;*/
+	width: 185px;
+	height: 300px;
+	float: left;
+}
+.i06 div img{
+	width: auto;
+	height: 100%;
+}
+.i06-2{
+	margin: 0 60px;
+}
+
+.i01:before, .i02:before, .i03 div:before,.i04:before ,.i05:before,  .i06:before{
+	content: "";
+	width: 100%;
+	height: 100px;
+	background-color: #292929;
+	opacity: .5;
+	position: absolute;
+	bottom: -100px;
+	transition: .3s;
+}
+.i01:after, .i02:after, .i03 div:after, .i04:after, .i05:after, .i06:after{
+	display: block;
+	font-size: 1.3em;
+	width: auto;
+	height: auto;
+	color: #eee;
+	position: absolute;
+	left: 20px;
+	bottom: -35px;
+	opacity: 0;
+	transition: .3s;
+	z-index: 1;
+}
+.shop_main div:hover:before{
+	bottom: 0;
+}
+.shop_main div:hover:after{
+	bottom: 35px;
+	opacity: 1;
+}
+.i01:after, .i06:after{
+	content: "SELF PICK 金屬絲紋杯墊";
+}
+
+.i02:after{
+	content: "珍藏明信片組";
+}
+.i03 div:after{
+	content: "酒保隨行小冊子";
+}
+.i04:after{
+	content: "獨領風騷設計酒杯";
+}
+.i05:after{
+	content: "好好聽原聲帶";
+}
+
+
+
+footer{
+	background-color: #222;
+	width: 100%;
+	height: 20%;
+	position: relative;
+	top: 100px;
+	/*bottom: 0;*/
+}
+footer div{
+	color: #b7985b;
+	font-size: 9px;
+	width: 270px;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: auto;
+}
+}
+
+
+/*RWWWWWWWWWD*/
+
+
+@media screen and (max-width: 736px){
+	*{margin: 0;padding: 0;list-style: none;font-family: arial, 微軟正黑體;}
+html,body{height: 100%;width: 100%;}
+body{
+	overflow-x: hidden;
+}
+header{
+	background-color: #222;
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg_shopping_01.jpg) center center no-repeat;
+	background-size: cover; 
+	box-shadow:0px 5px 10px rgba(10%,10%,10%,0.4), 
+}
+
+header p{
+	width: 100%;
+	height: auto;
+	color:#b7985b;
+	font-size: 16px;
+	line-height: 45px;
+	text-indent:2em;
+	letter-spacing:1px;
+	text-align: center;
+	position: relative;
+	top: 30%;
+	padding: 15px;
+}
+.accout{
+	width: 110px;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+}
+.accout a span{
+	font-size: 18px;
+	color: #b7985b;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+}
+.accout a img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*cursor: pointer;*/
+}
+.shop_main{
+	/*box-shadow:5px 5px 0 #fff,10px 10px 0 #b7985b, 
+			   -5px -5px 0 #fff,-10px -10px 0 #b7985b;*/
+	width: 100%;
+	height: auto;
+	overflow:hidden;
+	/*position: relative;
+	top: 0;
+	bottom: 0;*/
+}
+
+.shop_main>div{
+	padding: 15px;
+	float: left;
+	position: relative;
+	transition: 1s;
+}
+.i01{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.i01 img{
+	width: 100%;
+	height: auto;
+}
+.i02{
+	width: 100%;
+	height: auto;
+}
+.i02 img{
+	width: 100%;
+	height: auto;
+}
+.i03{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.i03 div{
+	/*outline: 1px solid blue;*/
+	width: 49%;
+	float: left;
+	height: auto;
+	/*float: left;*/
+}
+.i03 div img{
+	width: 100%;
+	height: auto;
+}
+.i03-1{
+	top: 0;
+	left: 0;
+}
+.i03-2{
+	top: 0;
+	right: 0;
+}
+.i03-3{
+	left: 0;
+	bottom: 0;
+}
+.i03-4{
+	right: 0;
+	bottom: 0;
+}
+.i04{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.i04 img{
+	width: 100%;
+	height: auto;
+}
+.i05{
+	width: 100%;
+	height: auto;
+}
+.i05 img{
+	width: 100%;
+	height: auto;
+}
+.i06{
+	width: 100%;
+	height: auto;
+}
+.i06 div{
+	/*outline: 1px solid blue;*/
+	width: 30%;
+	height: auto;
+	float: left;
+	margin: 3px;
+}
+.i06 div img{
+	width: 100%;
+	height: auto;
+}
+
+
+footer{
+	background-color: #222;
+	width: 100%;
+	height: 80px;
+	position: relative;
+
+	/*bottom: 0;*/
+}
+footer div{
+	color: #b7985b;
+	font-size: 9px;
+	width: 270px;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: auto;
+}
+}

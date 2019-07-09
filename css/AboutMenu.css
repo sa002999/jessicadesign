@@ -1,0 +1,556 @@
+@media screen and (min-width: 737px){
+
+*{margin:0;padding:0;list-style:none;}
+html,body{width:100%;height:100%;}
+.pass{
+	box-sizing:border-box;
+	border:20px solid #BCA06B;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	animation:passmove 5s cubic-bezier(.57,.13,.23,1) forwards;
+}
+@keyframes passmove{
+			0%{border:0px solid #b3985b;}
+			20%{border:60px solid #b3985b;}
+			60%{border:60px solid #b3985b;}
+			80%{border:60px solid #b3985b;}
+			99%{border:0px solid #b3985b;
+				top: 0;}
+			100%{border:0px solid #b3985b;
+				top: -100%;}
+		}
+
+.wipe1{
+	background: #eee;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	z-index: 99998;
+	animation:wipe1move 5s cubic-bezier(.57,.13,.23,1) forwards;
+}
+@keyframes wipe1move{
+			0%{
+				left: 100%;
+				top: 0;	
+			}
+			15%{
+				left: 100%;	
+				top: 0;
+			}
+			40%{
+				left: 0;
+				top: 0;
+			}
+			70%{
+				left: 0;
+				top: 0;
+			}
+			90%{
+				left: 0;
+				top: -100%;
+			}
+			100%{
+				left: 0;
+				top: -100%;
+			}
+		}
+.wipe1 img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: logoOut 5s forwards;
+}
+@keyframes logoOut{
+	0%{top: 0;}
+	90%{top: 0;}
+	91%{top: -400%;}
+	100%{top: -400%;}
+}
+.wipe2{
+	/*background: #222;*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99997;
+	animation:wipe2move 5s cubic-bezier(.57,.13,.23,1) forwards;
+}
+@keyframes wipe2move{
+			0%{
+				left: 0;
+				top: 0;	
+			}
+			25%{
+				left: 0;	
+				top: 0;
+			}
+			50%{
+				left: 0;
+				top: 0;
+			}
+			75%{
+				left: 0;
+				top: -100%;
+			}
+			100%{
+				left: 0;
+				top: -100%;
+			}
+		}
+.wipe3{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99996;
+	animation:wipe3move 5.5s  ease forwards;
+}
+@keyframes wipe3move{
+			0%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			60%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 1;
+			}
+			99%{
+				opacity: 0;
+				top:0;
+			}
+			100%{
+				opacity: 0;
+				top:-100%;
+			}
+		}
+/***menu***/
+.nav_main{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+input{
+	display: none;
+}
+.mama{
+	position: fixed;
+	display: block;
+	top: 50px;
+	left: 50px;
+	width: 3em;
+	height: 3em;
+}
+
+.mama:before{
+	content: url(../images/hamburger.png);
+	display: block;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	cursor: pointer;
+	transform: translateX(-200%);
+	animation: burgerShow .2s 5.2s ease forwards;
+}
+@keyframes burgerShow{
+	0%{transform: translateX(-200%);}
+	100%{transform: translateX(0);}
+}
+
+.xxx:checked + .m_container{
+	transform: translateX(100%);
+}
+.xxx:checked + .m_container .main_menu .submenu{
+	animation: butIn .5s ease forwards;
+}
+@keyframes butIn{
+	0%{transform: translateY(110%);}
+	100%{transform: translateY(0);}
+}
+.xxx:checked + .m_container .main_menu .submenu02{
+	animation-delay: .15s;
+}
+.xxx:checked + .m_container .main_menu .submenu03{
+	animation-delay: .3s;
+}
+.xxx:checked + .m_container .main_menu .submenu04{
+	animation-delay: .45s;
+}
+.xxx:checked + .m_container .main_menu .submenu05{
+	animation-delay: .6s;
+}
+.xxx:checked + .m_container .main_menu .submenu06{
+	animation-delay: .75s;
+}
+
+.m_container{
+	/*color:#b7985b;*/
+	background-color: #111;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	/*left: 0;*/
+	left: -100%;
+	opacity: 1;
+	transition: 1s ease;
+	animation: start 5s ease;
+}
+@keyframes start{
+	0%{
+		transform: translateX(100%);
+	}
+	50%{
+		transform: translateX(100%);
+	}
+	51%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+.m_container:before{
+	content: url(../images/hamburger-close.png);
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	cursor: pointer;
+	transition: .2s ease;
+}
+.m_container:hover:before{
+	transform: rotate(180deg);
+}
+
+
+.main_menu{
+	width: 1010px;
+	height: 186px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom:0;
+	overflow: hidden;
+	text-align: center;
+	margin: auto;
+}
+.submenu{
+	background-color: #222;
+	width: 180px;
+	height: 180px;
+	font-size: 1.5em;
+	line-height: 120px;
+	border: 2px solid #111;
+	float: left;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	transition: .5s;
+	transform: translateY(110%);
+	animation: butOut 5s ease;
+}
+@keyframes butOut{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(0);
+	}
+	51%{
+		transform: translateY(110%);
+	}
+	100%{
+		transform: translateY(110%);
+	}
+}
+.submenu06{
+	width: 90px;
+	border: 0px solid #111;
+}
+.submenu a{
+	color:#BCA06B;
+	display: block;
+	font-family: arial, 微軟正黑體;
+	text-decoration: none;
+}
+.submenu06 a{
+	position: relative;
+	overflow: hidden;
+}
+.submenu a p{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+	margin: auto;
+	transition: .5s;
+}
+.submenu a:hover p{
+	color:#eee;
+	z-index: 9;
+}
+.submenu a:after{
+	content: "";
+	display: block;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #BCA06B;
+	transform: rotate(45deg) translate(-300px, 0);
+	animation: menuOutHover 0.5s ease 1 forwards;
+}
+@keyframes menuOutHover{
+	0%{
+		transform: rotate(45deg) translate(-100px, 0);
+	}
+	100%{
+		transform: rotate(45deg) translate(200px, 0);
+	}
+}
+.submenu a:hover:after{
+	z-index: -1;
+	animation-name: menuOnHover;
+}
+@keyframes menuOnHover{
+	0%{
+		transform: rotate(45deg) translate(-300px, 0);
+	}
+	100%{
+		transform: rotate(45deg) translate(-105px, 0);
+	}
+}
+.submenu .fb, .in{
+	color:#292929;
+	border: 2px solid #111;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+}
+.submenu .fb p{
+	background: url(../images/fb.png) center no-repeat;
+	background-size: cover;
+}
+.submenu .in p{
+	background: url(../images/twitter.png) center no-repeat;
+	background-size: cover;
+}
+.submenu .fb:hover p{
+	background: url(../images/fb-w.png) center no-repeat;
+	background-size: cover;
+}
+.submenu .in:hover p{
+	background: url(../images/twitter-w.png) center no-repeat;
+	background-size: cover;
+}
+
+
+}
+
+/*RRRRRRRWWWWWWWWWWWWWWDDDDDDDDDDDDDDD*/
+
+@media screen and (max-width: 736px){
+
+*{margin: 0;padding: 0;list-style: none; box-sizing: border-box;}
+html,body{-webkit-text-size-adjust:none;}
+.pass,.wipe1,.wipe2,.wipe3{
+	display: none;
+}
+
+.nav_main{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+input{
+	display: none;
+}
+.mama{
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 100%;
+	height: 50px;
+}
+
+.mama:before{
+	content: "";
+	background: url(../images/hamburgerRWD.png) left no-repeat;
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 15px;
+	cursor: pointer;
+}
+
+.xxx:checked + .m_container{
+	transform: translateX(100%);
+}
+.xxx:checked + .m_container .main_menu .submenu{
+	animation: butIn .5s ease forwards;
+}
+@keyframes butIn{
+	0%{transform: translateX(-110%);}
+	100%{transform: translateX(0);}
+}
+.xxx:checked + .m_container .main_menu .submenu02{
+	animation-delay: .15s;
+}
+.xxx:checked + .m_container .main_menu .submenu03{
+	animation-delay: .3s;
+}
+.xxx:checked + .m_container .main_menu .submenu04{
+	animation-delay: .45s;
+}
+.xxx:checked + .m_container .main_menu .submenu05{
+	animation-delay: .6s;
+}
+.xxx:checked + .m_container .main_menu .submenu06{
+	animation-delay: .75s;
+}
+
+.m_container{
+	background-color: #292929;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	left: -60%;
+	opacity: 1;
+	transition: 1s ease;
+}
+.m_container:before{
+	content: url(../images/hamburger-closeRWD.png);
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	cursor: pointer;
+	transition: .2s ease;
+}
+
+.menuLogo{
+	background: url(../images/logogif-02.png) no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	margin-top: 60px;
+
+}
+
+.main_menu{
+	width: 60%;
+	height: 100%;
+	/*position: relative;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	top: 90px;
+	margin: auto;
+}
+.submenu{
+	background-color: #292929;
+	width: 100%;
+	height: 50px;
+	font-size: 14px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	transition: .5s;
+	padding: 15px 0;
+	border-bottom:1px solid #BCA06B;
+	transform: translateX(-110%);
+}
+.submenu06{
+	background-color: #292929;
+	border:0px solid #292929;
+}
+.submenu div{
+	display:none;
+}
+.submenu a{
+	color:#BCA06B;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: arial, 微軟正黑體;
+	text-decoration: none;
+	/*padding-left:20px */
+
+}
+.submenu a p{
+	height: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.submenu .fb, .in{
+	width: 45%;
+	height: 30px;
+	display: inline-block;
+	background-color: #292929;
+	padding: 0 ;
+}
+.submenu .fb{
+	border-right:1px solid #BCA06B;
+}
+.submenu .in{
+	width: 45%;
+	height: 30px;
+}
+
+.submenu .fb p{
+	background: url(../images/fb.png) center no-repeat;
+	background-size: 30px 30px;
+}
+.submenu .in p{
+	background: url(../images/twitter.png) center no-repeat;
+	background-size: 30px 30px;
+}
+.submenu .fb:hover p{
+	background: url(../images/fb-w.png) center no-repeat;
+	background-size: 30px 30px;
+}
+.submenu .in:hover p{
+	background: url(../images/twitter-w.png) center no-repeat;
+	background-size: 30px 30px;
+}
+
+
+} 

@@ -1,0 +1,833 @@
+@media screen and (min-width: 737px){
+
+*{margin: 0;padding: 0;list-style: none;}
+html,body{height: 100%;width: 100%;}
+body{
+	overflow-x: hidden;
+	position: relative;
+}
+.awrap{ 
+	width: 100%;
+	height: 646%;
+	background-color: #222222;
+}
+.awrap .avideo01{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	-webkit-filter: brightness(.7) grayscale(.9);
+}
+.awrap:after{
+	content: "";
+	width: 100%;
+	height: 150%;
+	position: absolute;
+	top: 100%;
+	background-color: #292929;
+	z-index: 5;
+}
+.bgimg01{
+/*	background: url(../images/bg101.png) no-repeat;
+	background-size: contain;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;	
+}
+
+.paraBG{
+	background: url(../images/bg103.png),url(../images/bg102.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.TopTop{
+	width: 50px;
+	height: 50px;
+	color:red;
+	display: block;
+	z-index: 999;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	transition: .5s;
+	cursor: pointer;
+}
+.TopTopUp{
+	bottom: 150px;
+}
+.TopTop .stick{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #BCA06B;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+.stickMove{
+	animation: GoTop 1s .25s ease-out infinite alternate;
+}
+@keyframes GoTop{
+	0%{transform:translateY(0) ;}
+	100%{transform:translateY(-30px)}
+}
+.arrowMove{
+	animation: GoTop 1s infinite alternate;
+}
+.TopTop .arrow1{
+	width: 20px;
+	height: 20px;
+	border-top:2px solid #BCA06B;
+	border-left:2px solid #BCA06B;
+	position: absolute;
+	left: 14px;
+	top:23px;
+	transform: rotate(45deg);
+}
+.TopTop .arrow2{
+	background-color: #BCA06B;
+	width: 2px;
+	height: 50px;
+	position: absolute;
+	top: 19px;
+	left: 24px;
+}
+
+.p01{
+	width: 33%;
+	color:#BCA06B;
+	font-size: 16px;
+	line-height: 40px;
+	font-family: arial, 微軟正黑體;
+	position: absolute;
+	top: 36%;
+	left: 55%;
+	font-size: 1.3em;
+	opacity: .2;
+	-webkit-filter: blur(3px);
+	transform:scaleX(1.8);
+	animation: p01move 2s 5.2s linear forwards;
+}
+@keyframes p01move{
+	0%{
+	opacity: .2;
+	transform:scaleX(1.8);
+	-webkit-filter: blur(3px);
+}
+	100%{
+	opacity: 1;
+	transform:scaleX(1);
+	-webkit-filter: blur(0);
+	}
+}
+.p01-1{
+	color: #eee;
+	top: 50%;
+}
+.picWall{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100%;
+	background-color: #222222;
+	z-index: 5;
+}
+.picWall img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 25%;
+	opacity: .6;
+	transition: 1.5s;
+	animation:picWallmove 60s linear infinite ;
+}
+@keyframes picWallmove{
+	0%{transform: translateX(0)}
+	100%{transform: translateX(200%)}
+}
+.picWall:hover img{
+	opacity: 1;
+}
+.picWall .wall00{
+	left: 0;
+}
+.picWall .wall01{
+	left: -200%;
+}
+.picWall .wall02{
+	left: -100%;
+}
+
+.Tbg01{
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 232%;
+	transition: 6s;
+	z-index: 3;
+}
+.Tbg01show{
+	height: 60%;
+	top: 232%;
+}
+.Tbg01 img{
+	width: 100%;
+	height: 100%;
+}
+.p02{
+	width: 650px;
+	text-align: center;
+	color:#eee;
+	font-size: 1.3em;
+	line-height: 40px;
+	font-family: arial, 微軟正黑體;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 70px;
+	position: absolute;
+	top: 250%;
+	left: 10%;
+	transition: 2s;
+	z-index: 5;
+	opacity: 0;
+}
+.p02show{
+	top: 242%;
+	opacity: 1;
+}
+.p02:before{
+	content: "「我們所選擇的事」";
+	letter-spacing:3px;
+	color: #BCA06B;
+	font-size: 1.5em;
+	display: block;
+	width: 400px;
+	height: auto;
+	position: absolute;
+	top: -2em;
+	left: 190px;
+}
+.p02:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: absolute;
+	left: 49%;
+	bottom: -2em;
+	transform: rotate(45deg);
+}
+.bgimg02{
+	/*outline: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: 7s;
+	top: 244%;
+}
+.bgimg02show{
+	top: 250%;
+}
+.bgimg02 img{
+	width: 100%;
+	height: auto; 
+}
+.Tbg02{
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 313%;
+	transition: 6s;
+}
+.Tbg02show{
+	height: 60%;
+	top: 323%;
+}
+.Tbg02 img{
+	width: 100%;
+	height: 100%;
+}
+.p03{
+	width: 670px;
+	text-align: center;
+	color:#fff;
+	font-size: 1.3em;
+	line-height: 40px;
+	font-family: arial, 微軟正黑體;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 70px;
+	position: absolute;
+	top: 338%;
+	right: 5%;
+	transition: 3s;
+	opacity: 0;
+	z-index: 5;
+}
+.p03show{
+	top: 330%;
+	opacity: 1;
+}
+.p03:before{
+	content: "「從創作者到Mr.Bartender」";
+	letter-spacing:3px;
+	color: #BCA06B;
+	font-size: 1.5em;
+	display: block;
+	width: 700px;
+	height: auto;
+	position: absolute;
+	top: -2em;
+	left: 80px;
+}
+.p03:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: absolute;
+	left: 49%;
+	bottom: -2em;
+	transform: rotate(45deg);
+}
+.member{
+	width: 70%;
+	min-width: 1340px;
+	height: 50%;
+	position: absolute;
+	transition: 1s;
+	top: 418%;
+	z-index: 5;
+	margin: 0 0%;
+	vertical-align: middle;
+}
+.member figure{
+	background-color: #eee;
+	width: 200px;
+	height: 200px;
+	margin: 55px;
+	float: left;
+	/*position: absolute;*/
+	transition: .3s;
+	transform:rotate(45deg) translateX(100px);
+}
+.member .mem01{
+	margin-left: 0px;
+}
+
+.member figure figcaption{
+	text-align: center;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: arial, 微軟正黑體;
+	transform:rotate(-45deg) translateY(80px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	z-index: 2;
+}
+.member figure:after{
+	content: "";
+	/*border:1px solid #eee; */
+	background-color: #BCA06B;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	right: 100px;
+	bottom: 100px;
+	transition: .2s;
+}
+.member figure:before{
+	content: "";
+	border:10px solid #BCA06B; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .2s;
+}
+figure img{
+	width: auto;
+	height: 90%;
+	/*margin: 15px;*/
+	box-shadow: 5px 5px 3px rgba(0%,0%,0%,0.5);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	transition: .3s;
+	transform:scale(1);
+	z-index: 3;
+
+}
+.member figure:hover img{
+	transform:scale(.4);
+	box-shadow: 10px 10px 6px rgba(0%,0%,0%,0.5);
+	top: -80px;
+	left: -80px;
+}
+.member figure:hover:before{
+	border:1px solid #BCA06B; 
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+}
+.member figure:hover:after{
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+}
+
+.p04{
+	width: 40%;
+	text-align: center;
+	color:#fff;
+	font-size: 1.3em;
+	line-height: 40px;
+	font-family: arial, 微軟正黑體;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 70px;
+	position: absolute;
+	top: 565%;
+	left: 10%;
+	transition: 3s;
+	opacity: 0;
+	z-index: 5;
+}
+.p04show{
+	top: 555%;
+	opacity: 1;
+}
+.p04:before{
+	content: "「對創作者是最壞的時代，也是最好的時代」";
+	letter-spacing:3px;
+	/*font-family: 新細明體;*/
+	/*font-weight: 900;*/
+	color: #BCA06B;
+	font-size: 1.5em;
+	display: block;
+	width: 700px;
+	height: auto;
+	position: absolute;
+	top: -2em;
+	left: 110px;
+}
+.p04:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: absolute;
+	left: 49%;
+	bottom: -2em;
+	transform: rotate(45deg);
+}
+.bgimg03{
+	background: url(../images/bg_about_03.JPG) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 120%;
+	position: absolute;
+	top: 526%;
+	right: 0;
+	opacity: 1;
+}
+.bgimg03 img{
+	width: 100%;
+	height: auto;
+}
+
+.btn{
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	top: 630%;
+	left: 45%;
+}
+.contact{
+	width: 0;
+	height: 40px;
+	border: 2px solid #b7985b;
+	overflow: hidden;
+	cursor: pointer;
+	transition: .6s;
+	text-align: center;	
+	z-index: 5;
+}
+.contactshow{
+	/*transform-origin: center center;*/
+	animation:btnmove 1.2s forwards;
+}
+@keyframes btnmove{
+			0%{
+				transform:rotate(360deg);
+				width: 0;
+			}
+			50%{
+				transform:rotate(0deg);
+				width: 0;
+			}
+			100%{
+				width: 150px;
+			}
+		}
+.btn .contact:hover{
+	background-color: #b7985b;
+}
+.contact:hover a{
+	color: #222;
+}
+.contact a{
+	color: #b7985b;
+	font-family: arial, 微軟正黑體;
+	font-size: 1.2em;
+	line-height: 40px;
+	text-decoration:none;
+	transition: .6s;
+}
+
+
+footer{
+	background-color: #222;
+	border-top:1.5px solid #b7985b ;
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 0;
+	/*bottom: 0;*/
+}
+footer div{
+	color: #b7985b;
+	font-size: 9px;
+	width: 270px;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: auto;
+}
+}
+
+
+
+/*rwd*/
+
+
+
+@media screen and (max-width: 736px){
+
+*{margin: 0;padding: 0;list-style: none; box-sizing: border-box;}
+html,body{-webkit-text-size-adjust:none;} 
+body{background-color: #292929;}
+p{margin-top: 60px;margin-bottom: 60px;text-align: center;}
+.awrap{
+	width: 100%;
+	/*height: 650%;*/
+	background-color: #222222;
+}
+.awrap video{
+	position: fixed;z-index: -1;
+	top: 50%;
+ 	left: 50%;
+	-webkit-transform: translate(-50%, -50%) scale(1.05);
+      -ms-transform: translate(-50%, -50%) scale(1.05);
+          transform: translate(-50%, -50%) scale(1.05);
+	-webkit-filter: brightness(.3) grayscale(.9);
+}
+.bgimg01{
+	width: 100%;
+	height: auto;
+}
+
+.bgimg01 img{
+	width: 100%;
+	height: auto;
+}
+
+.p01{
+	width: 100%;
+	color:#b7985b;
+	font-size: 16px;
+	line-height: 1.6em;
+	font-family: arial, 微軟正黑體;
+	text-align: center;
+	padding: 15px;
+}
+
+.picWall{
+	/*outline: 1px solid red;*/
+	width: 100%;
+	height: auto;
+}
+.picWall img{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.picWall .wall00{
+	display: none;
+}
+
+
+
+.p02{
+	width: 100%;
+	text-align: center;
+	color:#eee;
+	font-size: 1em;
+	line-height: 1.6em;
+	font-family: arial, 微軟正黑體;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 15px;
+}
+.p02:before{
+	content: "「我們所選擇的事」";
+	height: auto;
+	letter-spacing:3px;
+	/*font-family: 新細明體;*/
+	/*font-weight: 900;*/
+	color: #BCA06B;
+	font-size: 1.5em;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: -2em;
+}
+.p02:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: relative;
+	left: 49%;
+	bottom: -60px;
+	transform: rotate(45deg);
+}
+.bgimg02{
+	width: 100%;
+	height: auto;
+}
+.bgimg02 img{
+	width: 100%;
+	height: auto; 
+}
+.p03{
+	width: 100%;
+	text-align: center;
+	color:#fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	font-family: arial, 微軟正黑體;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 15px;
+	padding-top:0px ;
+	padding-bottom:40px; 
+}
+.p03:before{
+	content: "「從創作者到Mr.Bartender」";
+	height: auto;
+	letter-spacing:3px;
+	/*font-family: 新細明體;*/
+	/*font-weight: 900;*/
+	color: #BCA06B;
+	font-size: 1.5em;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: -2em;
+}
+.p03:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: relative;
+	left: 49%;
+	bottom: -60px;
+	transform: rotate(45deg);
+}
+.member{
+	text-align: center;
+	width: 100%;
+	min-width: 450px;
+	height: 800px;
+	position: relative;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+.member figure{
+	text-align: center;
+	background-color: #eee;
+	width: 130px;
+	height: 130px;
+	margin: 40px;
+	float: left;s
+	transition: .3s;
+	transform:rotate(45deg);
+}
+.member figure img{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: 5px 5px 3px rgba(0%,0%,0%,0.5);
+	transition: .3s;
+	z-index: 3;
+}
+.member .mem03{
+	clear: both;
+}
+.member .mem03,.member .mem04{
+	transform: translateY(150px) rotate(45deg);
+}
+
+.member figure figcaption{
+	text-align: center;
+	color: #eee;
+	font-family: arial, 微軟正黑體;
+	transform: rotate(-45deg) translateY(180px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	z-index: 5;
+}
+.member figure figcaption p{
+	top: 0;
+	transform:translateY(-50px);
+}
+.member figure:after{
+	content: "";
+	transform: rotate(0) translate(100px, 100px);
+	border:10px solid #BCA06B; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	transition: .2s;
+}
+.p04{
+	clear: both;
+	width: 100%;
+	/*text-align: center;*/
+	color:#fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	font-family: arial, 微軟正黑體;
+	position: relative;
+	border-top: 1px solid #BCA06B;
+	border-bottom: 1px solid #BCA06B;
+	padding: 15px;
+	padding-top: 0;
+	margin-top:100px; 
+}
+.p04:before{
+	content: "「對創作者是最壞的時代，也是最好的時代」";
+	height: auto;
+	letter-spacing:3px;
+	text-align: center;
+	color: #BCA06B;
+	font-size: 1.3em;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: -3em;
+}
+.p04:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	display: block;
+	background-color: #BCA06B;
+	position: relative;
+	left: 49%;
+	bottom: -60px;
+	transform: rotate(45deg);
+}
+.bgimg03{
+	/*outline: 1px solid green;*/
+	background: url(../images/bg_about_03.JPG) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*.bgimg03 img{
+	width: 100%;
+	height: auto;
+}*/
+
+.btn{
+	width: 150px;
+	height: 100px;
+}
+.contact{
+	width: 150px;
+	height: 40px;
+	border: 1.5px solid #b7985b;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	position: absolute;
+	left: 30%;
+}
+.contact a{
+	color: #b7985b;
+	font-family: arial, 微軟正黑體;
+	font-size: 16px;
+	line-height: 35px;
+}
+footer{
+	background-color: #222;
+	border-top:1.5px solid #b7985b ;
+	width: 100%;
+	height: 80px;
+	position: relative;
+	top: 0;
+}
+footer div{
+	color: #b7985b;
+	font-size: 9px;
+	width: 270px;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: auto;
+}
+.Tbg01,.Tbg02{
+	display: none;
+}
+
+}	/*END*/

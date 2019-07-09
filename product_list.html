@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+		<title>購物清單</title>
+		<meta data-browser="chrome" data-browser-major="45">
+		<link href="css/pay_style.css" rel="stylesheet">
+		<script type="text/javascript">
+		function pupopen(){
+			document.getElementById("bg").style.display="block";
+            document.getElementById("popbox").style.display="block" ; 
+		}
+		function pupclose(){
+			document.getElementById("bg").style.display="none";
+            document.getElementById("popbox").style.display="none" ; 
+		}
+		</script>
+	</head>
+	<body>
+		<div id="bg" onclick="pupclose()"></div>
+			<div id="popbox">
+				<div class="pop_img">
+					<img src="images/cupdisk2.jpg">
+				</div>
+				<div class="pop_text">
+					<div class="pop_text_money">
+						<div class="section__header">
+							<h1 class="section__title">金屬絲紋杯墊</h1>
+						</div>
+						<div class="section__text">
+							<p class="text">贊助NTD<span class="big_text"> $590</span>(含運)</p>
+							<p class="text">顏色</p>
+							<p class="text">數量</p>
+						</div>
+					</div>
+					<div class="pop_text_text">
+						<p class="text">圓形的金屬杯墊上刻有</p>
+						<p class="text">SELFPICK LOGO</p>
+						<p class="text">表面採金屬鍍鈦的方式</p>
+						<p class="text"> 杯墊紋理一絲絲細如髮絲的毛絲紋理</p>
+						<p class="text"> 讓它看起來不單單只是金屬表面</p>
+						<p class="text">而多了細膩的細節。</p>
+						<p class="text"> 杯墊為直徑八公分的圓形</p>
+						<p class="text">適用於任何杯型</p>
+						<p class="text">整體厚度為0.4cm</p>
+						<p class="text">拿在手上有些許的份量感</p>
+						<p class="text">最適合品飲酒類飲品時使用</p>
+					</div>
+					<div class="step__footer3">
+						<input name="button" type="button" class="btn btn-center btn-cta" value="加入購物車">
+						<input name="button" type="submit" class="btn btn-center btn-cta" value="立即贊助">
+					</div>
+				</div>
+			</div>
+		<div class="banner" data-header>
+			<div class="wrap">
+				<img src="images/PNG_LoGO2.png">
+			</div>
+		</div>
+		<div class="product_main" role="main">
+			<div class="product_content">
+				<table class="product-table">
+					<thead><tr>
+						<th scope="col"><span class="visually-hidden">Description</span></th>
+						<th scope="col"><span class="visually-hidden">Price</span></th>
+					</tr></thead>
+					<tbody>
+						<tr>
+							<th scope="col"><span></span></th>
+							<th scope="col"><span>商品名稱</span></th>
+							<th scope="col"><span>規格</span></th>
+							<th scope="col"><span>數量</span></th>
+							<th scope="col"><span>單價</span></th>
+							<th scope="col"><span>刪除</span></th>
+						</tr>
+						<tr class="product">
+							<td class="product__image" style="width:20%;">
+								<div class="product__image__inner">
+									<div class="product__image__wrapper2">
+										<a href="#"onclick="pupopen()"><img src="images/cupdisk1.jpg" /></a>
+									</div>
+								</div>
+							</td>
+							<td class="product__description" style="width:40%;">
+								<span class="product__description__name">金屬絲紋杯墊</span>
+							</td>
+							<td class="product__color2" style="width:10%;">
+								<select class="product__description__variant">
+									<option select="selected">金</option>
+									<option>銀</option>
+									<option>玫瑰金</option>
+								</select>
+							</td>
+							<td class="product__quant" style="width:10%;">
+								<select class="product__description__variant">
+									<option select="selected">1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+								</select>
+							</td>
+							<td class="product__price__list" style="width:10%;">
+								<span class="product__description__variant">$590</span>
+							</td>
+							<td class="product__delete" style="width:10%;">
+								<span class="product__description__variant">X</span>
+							</td>
+						</tr>
+					</thead>
+					</tbody>
+				</table>
+			</div>
+			<div class="order-summary__section order-summary__section--total-lines">
+				<table class="total-line-table">
+				<tbody>
+					<tr class="total-line total-line--subtotal">
+						<td class="total-line__name">商品金額總計(含運)</td>
+						<td class="total-line__price"><span class="order-summary__emphasis">$590</span></td>
+					</tr>
+					<tr class="total-line">
+						<td class="total-line__name payment">應付金額總計</td>
+						<td class="total-line__price payment">
+							<span class="payment-due__currency">NT</span>
+							<span class="payment-due__price">$590</span>
+						</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="step__footer2">
+					<div class="make_center">
+					<input name="button" type="button" class="btn btn-center btn-cta" value="繼續購物" onclick="location.href='shopping.html'">
+					</div>
+					<div class="make_center">
+					<input name="button" type="submit" class="btn btn-center btn-cta" value="前往贊助" onclick="location.href='pay.html'">
+					</div>
+			</div>
+		</div>
+		<div class="main__footer" role="contentinfo">
+			<h3 class="copyright-text">Copyright &copy 2015 Taiwan</h3>
+		</div>
+	</body>
+</html>
