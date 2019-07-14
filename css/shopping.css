@@ -210,8 +210,13 @@ header p{
 	bottom: 35px;
 	opacity: 1;
 }
-.i01:after, .i06:after{
+.i01:after{
 	content: "SELF PICK 金屬絲紋杯墊";
+}
+
+.i06:after{
+	content: "SELF PICK 金屬絲紋杯墊";
+	
 }
 
 .i02:after{
