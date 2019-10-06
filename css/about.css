@@ -55,7 +55,7 @@
 
 	.paraBG{
 		background: url(../images/bg103.png),url(../images/bg102.png);
-		background-position: center;
+		/*background-position: center;*/
 		background-repeat: no-repeat;
 		background-size: contain;
 		width: 100%;
@@ -812,7 +812,7 @@
 		background: url(../images/bg_about_03.JPG) no-repeat;
 		background-size: 100%;
 		/*width: 100%;*/
-		height: 60%;
+		/*height: 60%;*/
 		position: relative;
 	}
 	.bgimg03 img{
@@ -827,7 +827,7 @@
 	.btn{
 		width: 150px;
 		height: 100px;
-		margin: auto;
+		margin: 100px auto 0 auto;
 	}
 	.contact{
 		width: 150px;
@@ -1151,8 +1151,10 @@
 	}
 
 	.btn{
-		width: 150px;
+		width: 100%;
 		height: 100px;
+		display: flex;
+		justify-content: center;
 	}
 	.contact{
 		width: 150px;
@@ -1162,7 +1164,7 @@
 		cursor: pointer;
 		text-align: center;
 		position: absolute;
-		left: 30%;
+		/*left: 30%;*/
 	}
 	.contact a{
 		color: #b7985b;

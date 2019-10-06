@@ -396,6 +396,10 @@
 	          transform: translate(-50%, -50%) scale(1.05);
 	}
 
+	.video-picture {
+		display: none;
+	}
+
 	@-webkit-keyframes load {
 	  100% {
 	    opacity: 1;}
@@ -504,12 +508,13 @@
 	}
 
 	.table-center > div .logo{
-		position:absolute;
+		/*position:absolute;
 		margin:auto;
 		top:30%;
 		bottom:0;
 		left:0;
-		right:0;
+		right:0;*/
+		transform: scale(1.2);
 	}
 }
 
@@ -848,18 +853,17 @@
 	}
 
 	.container-video #video {
+		display: none;
+	}
+
+	.container-video .video-picture {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
+		transform: translate(-50%, -50%) scale(1.05);
+		height: 100%;
 		z-index: -1000;
 		overflow: hidden;
-		/*-webkit-transform: translate(-50%, -50%) scale(1.05);
-		  -ms-transform: translate(-50%, -50%) scale(1.05);*/
-		      transform: translate(-50%, -50%) scale(1.05);
 	}
 
 	@-webkit-keyframes load {
