@@ -48,6 +48,7 @@ $(function(){
 
         if (wScroll >  $('.p04').offset().top- height/2){
             $('.p04').addClass('p04show');
+            $('.p05').addClass('p05show');
         };
 
         if ( wScroll >  $('.contact').offset().top- height){
