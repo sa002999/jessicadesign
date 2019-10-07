@@ -618,14 +618,14 @@
 		overflow: hidden;
 		text-align: center;
 		position: relative;
-		top: 90px;
+		top: 10%;
 		margin: auto;
 	}
 	.submenu{
 		background-color: #292929;
 		width: 100%;
-		height: 60px;
-		font-size: 1.5em;
+		height: 50px;
+		font-size: 1.2em;
 		float: left;
 		position: relative;
 		overflow: hidden;
