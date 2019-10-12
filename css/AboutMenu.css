@@ -79,7 +79,7 @@
 		100%{top: -400%;}
 	}
 	.wipe2{
-		/*background: #222;*/
+		background: #222;
 		width: 100%;
 		height: 100%;
 		position: fixed;
@@ -455,7 +455,7 @@
 		100%{top: -400%;}
 	}
 	.wipe2{
-		/*background: #222;*/
+		background: #222;
 		width: 100%;
 		height: 100%;
 		position: fixed;
