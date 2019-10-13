@@ -526,6 +526,7 @@
 		line-height: 40px;
 		text-decoration:none;
 		transition: .6s;
+		text-decoration: none;
 	}
 
 
@@ -636,7 +637,8 @@
 		font-family: arial, 微軟正黑體;
 		border-top: 1px solid #BCA06B;
 		border-bottom: 1px solid #BCA06B;
-		padding: 15px;
+		padding: 0 15px 15px 15px;
+		margin-top: 100px;
 	}
 	.p02:before{
 		content: "「我們所選擇的事」";
@@ -665,6 +667,7 @@
 	.bgimg02{
 		width: 100%;
 		height: auto;
+		margin-top: 100px;
 	}
 	.bgimg02 img{
 		width: 100%;
@@ -679,9 +682,7 @@
 		font-family: arial, 微軟正黑體;
 		border-top: 1px solid #BCA06B;
 		border-bottom: 1px solid #BCA06B;
-		padding: 15px;
-		padding-top:0px ;
-		padding-bottom:40px; 
+		padding: 0 15px 15px 15px;
 		margin-top: 100px;
 	}
 	.p03:before{
@@ -695,7 +696,7 @@
 		display: block;
 		width: 100%;
 		position: relative;
-		top: -3em;
+		top: -2em;
 	}
 	.p03:after{
 		content: "";
@@ -790,11 +791,11 @@
 		letter-spacing:3px;
 		text-align: center;
 		color: #BCA06B;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		display: block;
 		width: 100%;
 		position: relative;
-		top: -3em;
+		top: -2em;
 	}
 	.p04:after{
 		content: "";
@@ -844,6 +845,7 @@
 		font-family: arial, 微軟正黑體;
 		font-size: 16px;
 		line-height: 35px;
+		text-decoration: none;
 	}
 	footer{
 		background-color: #222;
@@ -956,6 +958,8 @@
 		border-top: 1px solid #BCA06B;
 		border-bottom: 1px solid #BCA06B;
 		padding: 15px;
+		margin-top: 100px;
+		padding-bottom: 30px;
 	}
 	.p02:before{
 		content: "「我們所選擇的事」";
@@ -968,7 +972,7 @@
 		display: block;
 		width: 100%;
 		position: relative;
-		top: -2em;
+		top: -2.5em;
 	}
 	.p02:after{
 		content: "";
@@ -978,7 +982,7 @@
 		background-color: #BCA06B;
 		position: relative;
 		left: 49%;
-		bottom: -60px;
+		bottom: -70px;
 		transform: rotate(45deg);
 	}
 	.bgimg02{
@@ -1024,7 +1028,7 @@
 		background-color: #BCA06B;
 		position: relative;
 		left: 49%;
-		bottom: -60px;
+		bottom: -80px;
 		transform: rotate(45deg);
 	}
 	.member{
@@ -1035,6 +1039,7 @@
 		position: relative;
 		padding: 15px;
 		vertical-align: middle;
+		margin: 150px 0;
 	}
 
 	.member figure{
@@ -1108,7 +1113,8 @@
 		border-top: 1px solid #BCA06B;
 		border-bottom: 1px solid #BCA06B;
 		padding: 15px;
-		padding-top: 0; 
+		padding-top: 0;
+		padding-bottom: 40px;
 	}
 	.p04:before{
 		content: "「對創作者是最壞的時代，也是最好的時代」";
@@ -1116,7 +1122,7 @@
 		letter-spacing:3px;
 		text-align: center;
 		color: #BCA06B;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		display: block;
 		width: 100%;
 		position: relative;
@@ -1130,7 +1136,7 @@
 		background-color: #BCA06B;
 		position: relative;
 		left: 49%;
-		bottom: -60px;
+		bottom: -80px;
 		transform: rotate(45deg);
 	}
 	.bgimg03{
