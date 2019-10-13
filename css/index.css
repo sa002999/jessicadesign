@@ -1063,7 +1063,7 @@
 		}
 	}
 
-	.wipe1 img{
+	.wipe {
 		position: fixed;
 		width: 70%;
 		top: 0;
@@ -1072,6 +1072,7 @@
 		bottom: 0;
 		margin: auto;
 		animation: logoOut 5s forwards;
+		z-index: 99999;
 	}
 
 	@keyframes logoOut{
